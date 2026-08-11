@@ -17,7 +17,7 @@ A simple Python program that collects student information and marks, then calcul
 - Calculates percentage
 - Determines Pass/Fail status
 - Displays a final result summary
-
+![Student Performance Calculator Output](output.png)
 ## Technologies Used
 - Python
 
@@ -28,3 +28,4 @@ python .\student_performance.py
 
 ## Output
 The program displays student information, marks, total marks, average, percentage, and final result.
+![Student Performance Calculator Output](output.png)
