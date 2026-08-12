@@ -57,6 +57,7 @@ exit
 
 ### Output
 The program analyzes each number and displays a final summary report.
+![Day 3 Output](day3_output.png)
 
 ### Day 3 Status
 Completed successfully.
