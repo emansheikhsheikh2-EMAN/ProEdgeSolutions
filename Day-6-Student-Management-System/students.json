@@ -1,0 +1,20 @@
+{
+    "Eman": {
+        "name": "eman",
+        "department": "data science",
+        "age": 21,
+        "email": "eman@example.com",
+        "marks": []
+    },
+    "101": {
+        "name": "eman",
+        "department": "data science",
+        "age": 21,
+        "email": "eman@example.com",
+        "marks": [
+            85.0,
+            70.0,
+            84.0
+        ]
+    }
+}
