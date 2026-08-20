@@ -1,0 +1,12 @@
+Student_ID,Name,Age,Gender,Marks,Department
+S001,Ali Khan,20.0,Male,85.0,Computer Science
+S002,Sara Ahmed,21.0,Female,92.0,Computer Science
+S003,Usman Ali,21.0,Male,78.0,Data Science
+S004,Ayesha Khan,20.0,Female,88.0,Data Science
+S005,Hamza Malik,21.0,Male,75.0,Computer Science
+S006,Fatima Noor,22.0,Female,95.0,Data Science
+S007,Bilal Ahmed,21.0,Male,84.63636363636364,Computer Science
+S008,Hina Shah,20.0,Female,82.0,Data Science
+S009,Ahmed Raza,19.0,Male,90.0,Computer Science
+S010,Maham Ali,21.0,Female,85.0,Data Science
+S011,Zain Abbas,22.0,Male,76.0,Computer Science
