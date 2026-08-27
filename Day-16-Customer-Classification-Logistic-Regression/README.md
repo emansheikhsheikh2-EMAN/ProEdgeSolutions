@@ -139,9 +139,9 @@ Overall, the model provides a good baseline for the customer classification prob
 
 ![Model Evaluation Results](day-16_model-evaluation.png)
 
-### Confusion Matrix
+### Actual vs Predicted Results
 
-![Confusion Matrix](day-16_confusion-matrix.png)
+![Actual vs Predicted Results](day-16_actual-vs-predicted.png)
 
 ## Conclusion
 
