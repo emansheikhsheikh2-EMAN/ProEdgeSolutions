@@ -202,8 +202,7 @@ Therefore, in this experiment, the baseline Random Forest performed better on th
 
 The following screenshot shows the complete program output including the baseline results, hyperparameter tuning results, best parameters, optimized model results, and performance comparison.
 
-![Program Output](day-23_Program output.png)
-
+![Program Output](day-23_Program%20output.png)
 
 ## 📉 Accuracy Comparison Graph
 
