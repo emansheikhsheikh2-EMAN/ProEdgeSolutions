@@ -202,20 +202,16 @@ Therefore, in this experiment, the baseline Random Forest performed better on th
 
 The following screenshot shows the complete program output including the baseline results, hyperparameter tuning results, best parameters, optimized model results, and performance comparison.
 
-![Program Output](rf_tuning_comparison.png)
+![Program Output](day-23_Program output.png)
 
 
 ## 📉 Accuracy Comparison Graph
 
 The following graph compares the accuracy of the Default Random Forest and Optimized Random Forest.
 
-**Add your accuracy comparison graph here:**
-
-```text
 ![Accuracy Comparison](rf_tuning_comparison.png)
 ```
 
----
 
 ## 🔍 Results Analysis
 
