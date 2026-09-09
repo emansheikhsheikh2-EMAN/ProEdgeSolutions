@@ -204,9 +204,10 @@ Maintain Experiment History
 ```
 
 ## Screenshot
+
 ### Program Output
 
-<img src="./screenshots/Day-27-Program-output.png" alt="Day 27 Program Output">
+![Day 27 Program Output](Day-27-Program-output.png)
 
 The screenshot shows model evaluation, model saving, model loading, prediction verification, and experiment tracking results.
 ## Submission Checklist
