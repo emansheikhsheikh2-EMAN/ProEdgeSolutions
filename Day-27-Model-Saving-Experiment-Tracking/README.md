@@ -203,18 +203,7 @@ Track Experiment
 Maintain Experiment History
 ```
 
----
-
 ## Screenshot
-
-### Program Output
-
-## Screenshot
-
-### Program Output
-
-## Screenshot
-
 ### Program Output
 
 <img src="./screenshots/Day-27-Program-output.png" alt="Day 27 Program Output">
