@@ -214,7 +214,6 @@ Maintain Experiment History
 The screenshot shows model evaluation, model saving, model loading, prediction verification, and experiment tracking results.
 
 ---
-
 ## Submission Checklist
 
 * [x] Trained Machine Learning model
