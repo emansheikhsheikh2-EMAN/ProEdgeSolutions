@@ -212,6 +212,7 @@ Maintain Experiment History
 ![Day 27 Program Output](screenshots/Day-27-Program-output.png)
 
 The screenshot shows model evaluation, model saving, model loading, prediction verification, and experiment tracking results.
+![Day 27 Program Output](screenshots/Day-27-Program-output.png)
 
 ---
 ## Submission Checklist
