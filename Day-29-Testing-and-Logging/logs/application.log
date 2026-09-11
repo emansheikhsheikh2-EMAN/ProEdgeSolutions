@@ -1,0 +1,62 @@
+2026-09-10 23:51:39,170 | INFO | Day29 | Application startup
+2026-09-10 23:51:39,170 | INFO | Day29 | Data loading started
+2026-09-10 23:51:39,170 | WARNING | Day29 | Test warning message
+2026-09-10 23:51:39,171 | ERROR | Day29 | Test error message
+2026-09-10 23:56:32,994 | INFO | Day29 | Application startup
+2026-09-10 23:56:32,994 | INFO | Day29 | ML application started
+2026-09-10 23:56:32,995 | INFO | Day29 | Project: None
+2026-09-10 23:56:32,995 | INFO | Day29 | Environment: None
+2026-09-10 23:56:32,996 | INFO | Day29 | Starting data loading
+2026-09-10 23:56:32,997 | ERROR | Day29 | Failed to load dataset: Invalid file path or buffer object type: <class 'NoneType'>
+2026-09-10 23:58:48,265 | INFO | Day29 | Application startup
+2026-09-10 23:58:48,265 | INFO | Day29 | ML application started
+2026-09-10 23:58:48,266 | INFO | Day29 | Project: Customer Churn Prediction
+2026-09-10 23:58:48,266 | INFO | Day29 | Environment: development
+2026-09-10 23:58:48,266 | INFO | Day29 | Starting data loading
+2026-09-10 23:58:48,268 | ERROR | Day29 | Failed to load dataset: [Errno 2] No such file or directory: 'data/train.csv'
+2026-09-11 00:00:26,173 | INFO | Day29 | Application startup
+2026-09-11 00:00:26,173 | INFO | Day29 | ML application started
+2026-09-11 00:00:26,174 | INFO | Day29 | Project: Customer Churn Prediction
+2026-09-11 00:00:26,174 | INFO | Day29 | Environment: development
+2026-09-11 00:00:26,175 | INFO | Day29 | Starting data loading
+2026-09-11 00:00:26,246 | INFO | Day29 | Data loaded successfully
+2026-09-11 00:00:26,247 | INFO | Day29 | Dataset shape: (7043, 21)
+2026-09-11 00:00:26,248 | INFO | Day29 | Starting data preprocessing
+2026-09-11 00:00:26,304 | INFO | Day29 | Data preprocessing completed successfully
+2026-09-11 00:00:26,391 | INFO | Day29 | Train/test split completed
+2026-09-11 00:00:26,392 | INFO | Day29 | Training data shape: (5625, 30)
+2026-09-11 00:00:26,392 | INFO | Day29 | Testing data shape: (1407, 30)
+2026-09-11 00:00:26,392 | INFO | Day29 | Model training started
+2026-09-11 00:00:27,317 | INFO | Day29 | Model training completed successfully
+2026-09-11 00:00:27,369 | INFO | Day29 | Prediction generation completed successfully
+2026-09-11 00:00:27,391 | INFO | Day29 | Model evaluation completed | Accuracy=0.7960 | Precision=0.6835 | Recall=0.4332 | F1=0.5303
+2026-09-11 00:00:27,513 | INFO | Day29 | Model saved successfully: models/random_forest_model.pkl
+2026-09-11 00:00:27,630 | INFO | Day29 | Saved model loaded successfully
+2026-09-11 00:00:27,683 | INFO | Day29 | Predictions generated using loaded model
+2026-09-11 00:00:27,683 | INFO | Day29 | Prediction verification completed | Match=True
+2026-09-11 00:00:27,686 | INFO | Day29 | Experiment results saved successfully
+2026-09-11 00:00:27,687 | INFO | Day29 | Total experiments: 1
+2026-09-11 00:00:27,687 | INFO | Day29 | ML application completed successfully
+2026-09-11 00:02:28,594 | INFO | Day29 | Application startup
+2026-09-11 00:02:28,595 | INFO | Day29 | ML application started
+2026-09-11 00:02:28,595 | INFO | Day29 | Project: Customer Churn Prediction
+2026-09-11 00:02:28,596 | INFO | Day29 | Environment: development
+2026-09-11 00:02:28,596 | INFO | Day29 | Starting data loading
+2026-09-11 00:02:28,646 | INFO | Day29 | Data loaded successfully
+2026-09-11 00:02:28,646 | INFO | Day29 | Dataset shape: (7043, 21)
+2026-09-11 00:02:28,647 | INFO | Day29 | Starting data preprocessing
+2026-09-11 00:02:28,693 | INFO | Day29 | Data preprocessing completed successfully
+2026-09-11 00:02:28,749 | INFO | Day29 | Train/test split completed
+2026-09-11 00:02:28,750 | INFO | Day29 | Training data shape: (5625, 30)
+2026-09-11 00:02:28,750 | INFO | Day29 | Testing data shape: (1407, 30)
+2026-09-11 00:02:28,750 | INFO | Day29 | Model training started
+2026-09-11 00:02:29,734 | INFO | Day29 | Model training completed successfully
+2026-09-11 00:02:29,791 | INFO | Day29 | Prediction generation completed successfully
+2026-09-11 00:02:29,813 | INFO | Day29 | Model evaluation completed | Accuracy=0.7960 | Precision=0.6835 | Recall=0.4332 | F1=0.5303
+2026-09-11 00:02:29,943 | INFO | Day29 | Model saved successfully: models/random_forest_model.pkl
+2026-09-11 00:02:30,037 | INFO | Day29 | Saved model loaded successfully
+2026-09-11 00:02:30,090 | INFO | Day29 | Predictions generated using loaded model
+2026-09-11 00:02:30,091 | INFO | Day29 | Prediction verification completed | Match=True
+2026-09-11 00:02:30,111 | INFO | Day29 | Experiment results saved successfully
+2026-09-11 00:02:30,112 | INFO | Day29 | Total experiments: 2
+2026-09-11 00:02:30,113 | INFO | Day29 | ML application completed successfully
