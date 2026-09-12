@@ -1,0 +1,28 @@
+2026-09-12 03:40:17,517 - INFO - logging_config - Logging system initialized.
+2026-09-12 03:40:17,518 - INFO - pipeline - Loading training data.
+2026-09-12 03:40:17,765 - INFO - pipeline - Building machine learning pipeline.
+2026-09-12 03:40:17,767 - INFO - pipeline - Starting model training.
+2026-09-12 03:40:19,064 - INFO - pipeline - Model training completed.
+2026-09-12 03:40:19,065 - INFO - pipeline - Evaluation metrics: {'accuracy': 0.7771469127040455, 'precision': 0.603448275862069, 'recall': 0.4679144385026738, 'f1_score': 0.5271084337349398}
+2026-09-12 03:40:19,265 - INFO - model_manager - Model saved successfully: C:\Users\ztech.pk\Documents\AI ML Internship\ProEdgeSolutions\Day-30-Production-Ready-ML-Pipeline\models\churn_model_v1.joblib
+2026-09-12 03:40:19,267 - INFO - pipeline - Model saved and experiment recorded.
+2026-09-12 03:41:48,914 - INFO - logging_config - Logging system initialized.
+2026-09-12 03:41:48,914 - INFO - pipeline - Loading training data.
+2026-09-12 03:41:49,029 - INFO - pipeline - Building machine learning pipeline.
+2026-09-12 03:41:49,030 - INFO - pipeline - Starting model training.
+2026-09-12 03:41:50,448 - INFO - pipeline - Model training completed.
+2026-09-12 03:41:50,449 - INFO - pipeline - Evaluation metrics: {'accuracy': 0.7771469127040455, 'precision': 0.603448275862069, 'recall': 0.4679144385026738, 'f1_score': 0.5271084337349398}
+2026-09-12 03:41:50,605 - INFO - model_manager - Model saved successfully: C:\Users\ztech.pk\Documents\AI ML Internship\ProEdgeSolutions\Day-30-Production-Ready-ML-Pipeline\models\churn_model_v1.joblib
+2026-09-12 03:41:50,620 - INFO - pipeline - Model saved and experiment recorded.
+2026-09-12 03:41:50,830 - INFO - model_manager - Model loaded successfully: C:\Users\ztech.pk\Documents\AI ML Internship\ProEdgeSolutions\Day-30-Production-Ready-ML-Pipeline\models\churn_model_v1.joblib
+2026-09-12 03:41:50,985 - INFO - model_manager - Prediction generated successfully for 5 records.
+2026-09-12 04:21:21,301 - INFO - src.logging_config - Logging system initialized.
+2026-09-12 04:21:21,302 - INFO - src.pipeline - Loading training data.
+2026-09-12 04:21:21,427 - INFO - src.pipeline - Building machine learning pipeline.
+2026-09-12 04:21:21,428 - INFO - src.pipeline - Starting model training.
+2026-09-12 04:21:22,593 - INFO - src.pipeline - Model training completed.
+2026-09-12 04:21:22,593 - INFO - src.pipeline - Evaluation metrics: {'accuracy': 0.7771469127040455, 'precision': 0.603448275862069, 'recall': 0.4679144385026738, 'f1_score': 0.5271084337349398}
+2026-09-12 04:21:22,744 - INFO - src.model_manager - Model saved successfully: C:\Users\ztech.pk\Documents\AI ML Internship\ProEdgeSolutions\Day-30-Production-Ready-ML-Pipeline\models\churn_model_v1.joblib
+2026-09-12 04:21:22,764 - INFO - src.pipeline - Model saved and experiment recorded.
+2026-09-12 04:21:22,974 - INFO - src.model_manager - Model loaded successfully: C:\Users\ztech.pk\Documents\AI ML Internship\ProEdgeSolutions\Day-30-Production-Ready-ML-Pipeline\models\churn_model_v1.joblib
+2026-09-12 04:21:23,116 - INFO - src.model_manager - Prediction generated successfully for 5 records.
