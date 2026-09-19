@@ -1,0 +1,27 @@
+2026-09-19 02:24:23,825 - INFO - ML model loaded successfully
+2026-09-19 02:25:41,498 - INFO - Health check request received
+2026-09-19 02:29:13,951 - INFO - Prediction request received
+2026-09-19 02:29:13,974 - ERROR - Prediction error: Expected 2D array, got 1D array instead:
+array=[{'gender': 'string', 'SeniorCitizen': 1, 'Partner': 'string', 'Dependents': 'string', 'tenure': 0, 'PhoneService': 'string', 'MultipleLines': 'string', 'InternetService': 'string', 'OnlineSecurity': 'string', 'OnlineBackup': 'string', 'DeviceProtection': 'string', 'TechSupport': 'string', 'StreamingTV': 'string', 'StreamingMovies': 'string', 'Contract': 'string', 'PaperlessBilling': 'string', 'PaymentMethod': 'string', 'MonthlyCharges': 1.0, 'TotalCharges': 0.0}].
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+Traceback (most recent call last):
+  File "C:\Users\ztech.pk\Documents\AI ML Internship\ProEdgeSolutions\Day-36-ML-Prediction-API\src\main.py", line 96, in predict
+    prediction = model.predict([input_data])[0]
+                 ~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\ztech.pk\Documents\AI ML Internship\.venv\Lib\site-packages\sklearn\pipeline.py", line 796, in predict
+    Xt = transform.transform(Xt)
+  File "C:\Users\ztech.pk\Documents\AI ML Internship\.venv\Lib\site-packages\sklearn\utils\_set_output.py", line 319, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\ztech.pk\Documents\AI ML Internship\.venv\Lib\site-packages\sklearn\compose\_column_transformer.py", line 1039, in transform
+    X = _check_X(X)
+  File "C:\Users\ztech.pk\Documents\AI ML Internship\.venv\Lib\site-packages\sklearn\compose\_column_transformer.py", line 1299, in _check_X
+    return check_array(X, ensure_all_finite="allow-nan", dtype=object)
+  File "C:\Users\ztech.pk\Documents\AI ML Internship\.venv\Lib\site-packages\sklearn\utils\validation.py", line 1073, in check_array
+    raise ValueError(msg)
+ValueError: Expected 2D array, got 1D array instead:
+array=[{'gender': 'string', 'SeniorCitizen': 1, 'Partner': 'string', 'Dependents': 'string', 'tenure': 0, 'PhoneService': 'string', 'MultipleLines': 'string', 'InternetService': 'string', 'OnlineSecurity': 'string', 'OnlineBackup': 'string', 'DeviceProtection': 'string', 'TechSupport': 'string', 'StreamingTV': 'string', 'StreamingMovies': 'string', 'Contract': 'string', 'PaperlessBilling': 'string', 'PaymentMethod': 'string', 'MonthlyCharges': 1.0, 'TotalCharges': 0.0}].
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+2026-09-19 02:31:42,117 - INFO - ML model loaded successfully from C:\Users\ztech.pk\Documents\AI ML Internship\ProEdgeSolutions\Day-36-ML-Prediction-API\models\churn_model_v1.joblib
+2026-09-19 02:33:08,646 - INFO - Prediction request received
+2026-09-19 02:33:08,650 - INFO - Input data prepared successfully
+2026-09-19 02:33:08,838 - INFO - Prediction generated successfully: 0
