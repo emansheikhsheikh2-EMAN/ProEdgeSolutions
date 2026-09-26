@@ -10,17 +10,7 @@ from src.config import MODEL_PATH
 from src.logging_config import setup_logging
 from src.models import CustomerData, PredictionResponse
 
-
-# --------------------------------------------------
-# Logging
-# --------------------------------------------------
-
 logger = setup_logging()
-
-
-# --------------------------------------------------
-# FastAPI Application
-# --------------------------------------------------
 
 app = FastAPI(
     title="Customer Churn Prediction API",
@@ -28,43 +18,36 @@ app = FastAPI(
     version="1.0.0",
 )
 
+# Redis configuration
+REDIS_URL = os.getenv("REDIS_URL")
 
-# --------------------------------------------------
-# Redis Configuration
-# --------------------------------------------------
+if REDIS_URL:
+    redis_client = redis.from_url(
+        REDIS_URL,
+        decode_responses=True,
+    )
+else:
+    REDIS_HOST = os.getenv("REDIS_HOST", "localhost")
+    REDIS_PORT = int(os.getenv("REDIS_PORT", "6379"))
 
-REDIS_HOST = os.getenv("REDIS_HOST", "localhost")
-REDIS_PORT = int(os.getenv("REDIS_PORT", "6379"))
-
-redis_client = redis.Redis(
-    host=REDIS_HOST,
-    port=REDIS_PORT,
-    decode_responses=True,
-)
-
-
-# --------------------------------------------------
-# Load Machine Learning Model
-# --------------------------------------------------
+    redis_client = redis.Redis(
+        host=REDIS_HOST,
+        port=REDIS_PORT,
+        decode_responses=True,
+    )
 
 model = None
 
 try:
     model = joblib.load(MODEL_PATH)
     logger.info("ML model loaded successfully from %s", MODEL_PATH)
-
 except Exception as e:
     logger.error("Failed to load ML model: %s", e)
 
 
-# --------------------------------------------------
-# Root Endpoint
-# --------------------------------------------------
-
 @app.get("/")
 def root():
     logger.info("Root endpoint request received")
-
     return {
         "message": "Customer Churn Prediction API",
         "version": "1.0.0",
@@ -72,17 +55,12 @@ def root():
     }
 
 
-# --------------------------------------------------
-# Health Check Endpoint
-# --------------------------------------------------
-
 @app.get("/health")
 def health_check():
     logger.info("Health check request received")
 
     if model is None:
         logger.error("Health check failed: ML model is not loaded")
-
         raise HTTPException(
             status_code=503,
             detail="ML model is not available",
@@ -94,10 +72,6 @@ def health_check():
     }
 
 
-# --------------------------------------------------
-# Redis Health Check
-# --------------------------------------------------
-
 @app.get("/redis-health")
 def redis_health():
     try:
@@ -107,8 +81,7 @@ def redis_health():
 
         return {
             "status": "connected",
-            "redis_host": REDIS_HOST,
-            "redis_port": REDIS_PORT,
+            "message": "Redis service is available",
         }
 
     except Exception as e:
@@ -119,10 +92,6 @@ def redis_health():
             detail="Redis service is not available",
         )
 
-
-# --------------------------------------------------
-# Prediction Endpoint
-# --------------------------------------------------
 
 @app.post("/predict", response_model=PredictionResponse)
 def predict(customer: CustomerData):
@@ -137,19 +106,16 @@ def predict(customer: CustomerData):
         )
 
     try:
-        # Convert validated Pydantic data into dictionary
         input_data = customer.model_dump()
 
-        # Convert input into DataFrame
         input_df = pd.DataFrame([input_data])
 
         logger.info("Input data prepared successfully")
 
-        # Generate prediction
         prediction = model.predict(input_df)[0]
+
         prediction = int(prediction)
 
-        # Convert prediction into readable churn result
         churn = "Yes" if prediction == 1 else "No"
 
         # Store prediction count in Redis
